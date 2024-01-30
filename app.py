@@ -18,6 +18,14 @@ SELECT TOP (1000) [Product_Id]
   FROM [warehouse].[dbo].[Product] 
   """
 
+SQL_QUERY2 = """ 
+SELECT (1000) [Product_Id]
+      ,[Name]
+      ,[Price]
+      ,[Description]
+  FROM [warehouse].[dbo].[Product] 
+  """
+
 cursor = conn.cursor()
 cursor.execute(SQL_QUERY)
 
@@ -26,3 +34,5 @@ for r in records:
     print(f"{r.Product_Id}\t{r.Name}\t{r.Price}\t{r.Description}")
 
  #example of adding a change    
+
+#branch to edit the queries   
