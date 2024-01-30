@@ -24,3 +24,5 @@ cursor.execute(SQL_QUERY)
 records = cursor.fetchall()
 for r in records: 
     print(f"{r.Product_Id}\t{r.Name}\t{r.Price}\t{r.Description}")
+
+ #example of adding a change    
